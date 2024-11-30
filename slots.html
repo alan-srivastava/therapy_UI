@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Slot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="slot-container">
+    <a href="sessions.html" class="back-button">← Back</a>
+    <h1>Please select therapy mode</h1>
+    <div class="therapy-modes">
+      <div class="therapy-mode active" id="inperson">
+        <img src="inperson.png" alt="In-person">
+        <p>In-person</p>
+      </div>
+      <div class="therapy-mode" id="video">
+        <img src="video.png" alt="Video">
+        <p>Video</p>
+      </div>
+      <div class="therapy-mode" id="call">
+        <img src="call.png" alt="Call">
+        <p>Call</p>
+      </div>
+    </div>
+    <p>3rd Floor, A2, Block, Delhi</p>
+
+    <div class="filter-options">
+      <button class="filter-button active" id="slotsFilter">Slots</button>
+      <button class="filter-button" id="dateFilter">Date</button>
+    </div>
+
+    <!-- Slot Selection Section -->
+    <div id="slotsSection" class="slot-section active">
+      <h2>Select slots</h2>
+      <div class="time-slots">
+        <h3>Morning</h3>
+        <button class="slot-button">8:00 - 8:45 AM</button>
+        <button class="slot-button">9:00 - 9:45 AM</button>
+        <button class="slot-button">10:00 - 10:45 AM</button>
+        <h3>Afternoon</h3>
+        <button class="slot-button">12:00 - 12:45 PM</button>
+        <button class="slot-button">2:00 - 2:45 PM</button>
+        <button class="slot-button">4:00 - 4:45 PM</button>
+        <h3>Evening</h3>
+        <button class="slot-button">5:00 - 5:45 PM</button>
+        <button class="slot-button">6:00 - 6:45 PM</button>
+        <button class="slot-button">7:00 - 7:45 PM</button>
+      </div>
+    </div>
+
+    <!-- Date Selection Section -->
+    <div id="dateSection" class="date-section">
+      <h2>Available date</h2>
+      <div class="calendar">
+        <p>2024 Aug</p>
+        <table>
+          <thead>
+            <tr>
+              <th>MON</th>
+              <th>TUE</th>
+              <th>WED</th>
+              <th>THU</th>
+              <th>FRI</th>
+              <th>SAT</th>
+              <th>SUN</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01</td>
+              <td>02</td>
+              <td class="highlighted">03</td>
+              <td>04</td>
+              <td>05</td>
+              <td>06</td>
+              <td>07</td>
+            </tr>
+            <tr>
+              <td>08</td>
+              <td>09</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    <button class="proceed-button disabled" id="proceedButton">Proceed</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

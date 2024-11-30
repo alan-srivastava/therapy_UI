@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Therapy Mode</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Select therapy mode</h2>
+    <div class="therapy-modes">
+      <button class="mode-btn active" id="in-person">
+        <img src="in-person-icon.png" alt="In-person">
+        In-person
+      </button>
+      <button class="mode-btn" id="video">
+        <img src="video-call-icon.png" alt="Video Call">
+        Video Call
+      </button>
+      <button class="mode-btn" id="call">
+        <img src="call-icon.png" alt="Call">
+        Call
+      </button>
+    </div>
+
+    <div class="filter">
+      <button class="filter-btn active" id="slot-filter">Slots</button>
+      <button class="filter-btn" id="date-filter">Date</button>
+    </div>
+
+    <div id="slots-section" class="section">
+      <h3>Select slots</h3>
+      <div class="time-slots">
+        <div>
+          <h4>Morning</h4>
+          <button class="slot-btn">8:00 - 8:45 AM</button>
+          <button class="slot-btn">9:00 - 9:45 AM</button>
+        </div>
+        <div>
+          <h4>Afternoon</h4>
+          <button class="slot-btn">12:00 - 12:45 PM</button>
+          <button class="slot-btn">1:00 - 1:45 PM</button>
+        </div>
+        <div>
+          <h4>Evening</h4>
+          <button class="slot-btn">5:00 - 5:45 PM</button>
+          <button class="slot-btn">6:00 - 6:45 PM</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="calendar-section" class="section hidden">
+      <h3>Available date</h3>
+      <div class="calendar">
+        <div class="month-nav">
+          <button class="prev-month">&lt;</button>
+          <span>August 2024</span>
+          <button class="next-month">&gt;</button>
+        </div>
+        <div class="calendar-grid">
+          <div>01</div><div>02</div><div>03</div><div>04</div>
+          <!-- Add all days -->
+          <div>29</div><div>30</div><div>31</div>
+        </div>
+      </div>
+    </div>
+
+    <button class="proceed-btn disabled" id="proceed-btn">Proceed</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+<div id="calendar-section" class="section hidden">
+    <h3>Available date</h3>
+    <div class="calendar">
+      <div class="month-nav">
+        <button class="prev-month">&lt;</button>
+        <span id="current-month">August 2024</span>
+        <button class="next-month">&gt;</button>
+      </div>
+      <div class="calendar-grid">
+        <!-- Placeholder for dynamically generated dates -->
+      </div>
+    </div>
+  </div>  
+</html>
+
+  

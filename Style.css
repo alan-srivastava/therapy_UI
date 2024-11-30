@@ -1,0 +1,478 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-section {
+    padding: 20px;
+    width: 35%;
+    border-right: 1px solid #e6e6e6;
+    text-align: center;
+  }
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 15px;
+    object-fit: cover; /* Ensures the image fills the circle */
+  }  
+  
+  h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .role, .experience, .price, .location {
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .book-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .book-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .details-section {
+    padding: 20px;
+    width: 65%;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .tags span {
+    display: inline-block;
+    background-color: #e7f3ff;
+    color: #007bff;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+  }
+  
+  .tags span:hover {
+    background-color: #cfe2ff;
+    color: #0056b3;
+  }
+  /* Container for the sessions page */
+.session-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .back-button {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .info-banner {
+    background-color: #e7f3ff;
+    color: #007bff;
+    padding: 10px;
+    margin: 20px auto;
+    width: fit-content;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .session-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .session-card {
+    background-color: #007bff;
+    color: white;
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .session-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .duration-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .duration-options span {
+    padding: 5px 10px;
+    background-color: white;
+    color: #007bff;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .duration-options .active {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  .session-card h3 {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+  
+  .session-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .session-card ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .proceed-button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: white;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .proceed-button:hover {
+    background-color: #e7f3ff;
+  }
+ /* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .slot-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .back-button {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .therapy-modes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .therapy-mode {
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .therapy-mode.active {
+    border: 2px solid #007bff;
+  }
+  
+  .therapy-mode img {
+    max-width: 50px;
+  }
+  
+  .filter-options {
+    margin: 20px auto;
+  }
+  
+  .filter-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .filter-button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .slot-section,
+  .date-section {
+    display: none;
+  }
+  
+  .slot-section.active,
+  .date-section.active {
+    display: block;
+  }
+  
+  .slot-button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .slot-button:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .calendar {
+    display: inline-block;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .calendar table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  .calendar td,
+  .calendar th {
+    padding: 10px;
+    color: #333;
+  }
+  
+  .calendar .highlighted {
+    color: #007bff;
+  }
+  
+  .proceed-button {
+    padding: 15px 30px;
+    margin: 30px 0;
+    background-color: #ddd;
+    border: none;
+    border-radius: 20px;
+    cursor: not-allowed;
+    color: #999;
+  }
+  
+  .proceed-button.active {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .therapy-modes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .mode-btn {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+  }
+  
+  .mode-btn.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .filter {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .filter-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+  }
+  
+  .filter-btn.active {
+    background-color: #000;
+    color: white;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .time-slots {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .slot-btn {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 5px 0;
+  }
+  
+  .slot-btn.selected {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .calendar {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .proceed-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ccc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: not-allowed;
+  }
+  
+  .proceed-btn.active {
+    background-color: #007bff;
+    cursor: pointer;
+  }
+  .calendar {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .calendar-day {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s;
+  }
+  
+  .calendar-day:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .calendar-day.selected {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .month-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .month-nav button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .month-nav button:hover {
+    background-color: #0056b3;
+  }
+  
